@@ -1,7 +1,7 @@
-export const Attribute = ({attribute}) => {
+export const Attribute = ({attributeName, attributeValue}) => {
   return (
     <li>
-      {attribute[0]} : {attribute[1]}
+      {attributeName} : {attributeValue}
     </li>
   )
 }

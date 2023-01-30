@@ -7,7 +7,7 @@ export const AttributeList = ({attributes}) => {
     <div>
       <h3>Attributes</h3>
       <ul>
-        {attributesEntries.map(attribute => <Attribute key={attribute[0]} attribute={attribute} />)}
+        {attributesEntries.map(attribute => <Attribute key={attribute[0]} attributeName={attribute[0]} attributeValue={attribute[1]} />)}
       </ul>
     </div>
   )
