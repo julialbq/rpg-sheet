@@ -1,5 +1,3 @@
-import fighter from '../../assets/fighter.jpeg'
-
 export const CharacterClass = ({characterClass}) => {
   const {name, icon} = characterClass;
 
@@ -7,7 +5,7 @@ export const CharacterClass = ({characterClass}) => {
     <div>
       <h3>Class</h3>
       <p>{name}</p>
-      <img src={fighter} alt="Character class" />
+      <img src={icon} alt="Character class" />
     </div>
   )
 }

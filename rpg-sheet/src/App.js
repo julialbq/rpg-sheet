@@ -1,3 +1,4 @@
+import fighterIcon from './assets/fighter.jpeg'
 import { SkillsList } from "./components/SkillsList/SkillsList";
 import { AttributeList } from "./components/AttributeList/AttributeList";
 import { CharacterClass } from "./components/CharacterClass/CharacterClass";
@@ -45,7 +46,7 @@ function App() {
     ],
     characterClass: {
       name: 'Fighter',
-      icon: './assets/fighter.jpeg',
+      icon: fighterIcon,
     }
   }
 
