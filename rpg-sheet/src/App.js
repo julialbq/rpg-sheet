@@ -7,6 +7,7 @@ import { CharacterClass } from "./components/CharacterClass/CharacterClass";
 import { Identification } from "./components/Identification/Identification";
 import { Level } from "./components/Level/Level";
 import { Life } from "./components/Life/Life";
+import { Inventory } from './components/Inventory/Inventory';
 
 function App() {
 
@@ -65,7 +66,10 @@ function App() {
         </div>
         <AttributeList attributes={character.attributes} />
       </div>
-      <SkillsList skills={character.skills} />
+      <div className='extra-info'>
+        <SkillsList skills={character.skills} />
+        <Inventory inventory={character.inventory} />
+      </div>
     </div>
   );
 }
