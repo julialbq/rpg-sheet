@@ -1,0 +1,10 @@
+.class-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20vw;
+}
+
+img {
+  border-radius: 8px;
+}

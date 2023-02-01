@@ -1,0 +1,8 @@
+.level {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid saddlebrown;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  margin-top: 10px;
+}

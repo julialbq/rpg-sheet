@@ -1,4 +1,6 @@
+import './App.css'
 import fighterIcon from './assets/fighter.jpeg'
+import RPGIcon from './assets/rpg-icon.png'
 import { SkillsList } from "./components/SkillsList/SkillsList";
 import { AttributeList } from "./components/AttributeList/AttributeList";
 import { CharacterClass } from "./components/CharacterClass/CharacterClass";
@@ -52,11 +54,17 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Character sheet</h1>
+      <img className='icon' src={RPGIcon} alt='RPG Icon'/>
       <Identification name={character.name} />
-      <Life life={character.life} mana={character.mana} />
-      <Level level={character.level} xp = {character.xp} />
-      <CharacterClass characterClass={character.characterClass} />
-      <AttributeList attributes={character.attributes} />
+      <div className="info">
+        <div className="main-info">
+        <Life life={character.life} mana={character.mana} />
+        <Level level={character.level} xp = {character.xp} />
+        <CharacterClass characterClass={character.characterClass} />
+        </div>
+        <AttributeList attributes={character.attributes} />
+      </div>
       <SkillsList skills={character.skills} />
     </div>
   );
