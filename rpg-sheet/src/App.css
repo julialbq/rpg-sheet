@@ -27,11 +27,17 @@ h3 {
 .info {
   width: 100vw;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
 
 .main-info {
-  width: 20vw;
+  width: 40vw;
+}
+
+.extra-info {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
