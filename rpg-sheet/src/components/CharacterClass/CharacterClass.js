@@ -6,7 +6,7 @@ export const CharacterClass = ({characterClass}) => {
 
   return (
     <div>
-      <h3>Class</h3>
+      <h3> <GiAbstract089 size={22} /> Class</h3>
       <div className="class-info">
         <p>{name}</p>
         <img src={icon} alt="Character class" />
