@@ -7,7 +7,7 @@ export const SkillsList = ({skills}) => {
     <div className='skill-info'>
       <h3> <GiAbstract063 size={22} /> Skills</h3>
     <ul>
-      {skills.map(({name, description} ) => <Skill key={name} name={name} description={description} />)}
+      {skills.map(({name, description, manaCost} ) => <Skill key={name} name={name} description={description} manaCost ={manaCost}/>)}
     </ul>
     </div>
     

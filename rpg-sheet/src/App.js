@@ -28,11 +28,13 @@ function App() {
     skills: [
       {
         name: 'flying',
-        description: 'ability to fly'
+        description: 'ability to fly',
+        manaCost: 10,
       },
       {
         name: 'speed',
-        description: 'run fast'
+        description: 'run fast',
+        manaCost: 15,
       }
     ],
     inventory: [
