@@ -1,4 +1,5 @@
 import './App.css'
+import { inventoryOptions } from './inventoryOptions'
 import fighterIcon from './assets/fighter.jpeg'
 import RPGIcon from './assets/rpg-icon.png'
 import { SkillsList } from "./components/SkillsList/SkillsList";
@@ -37,49 +38,42 @@ function App() {
         manaCost: 15,
       }
     ],
-    inventory: [
-      {
-        map: { weight: 0.5, type: 'item', description: 'map of the world' },
-        amount: 1,
-      },
-      {
-        health_potion: { weight: 0.1, type: 'item', description: 'Recover 10 health points' },
-        amount: 5,
-      },
-      {
-        food_rations: { weight: 0.1, type: 'item', description: 'feed yourself!' },
-        amount: 5,
-      },
-      {
-        book_collection: { weight: 2, type: 'item', description: 'bring knowledge with you' },
-        amount: 1,
-      },
-      {
-        torch: { weight: 0.5, type: 'item', description: 'ligthen your path' },
-        amount: 1,
-      },
-      {
-        climbing_gear: { weight: 1, type: 'item', description: 'for when you cant climb on your own' },
-        amount: 1,
-      },
-      {
-        mana_potion: { weight: 0.1, type: 'item', description: 'Recover 5 mana points' },
-        amount: 1,
-      },
-      {
-        battle_axe: { weight: 10, type: 'weapon', description: 'steel axe made for cutting through armor' },
-        amount: 1,
-      },
-      {
-        leather_armor: { weight: 2, type: 'armor', description: 'light and flexible armor' },
-        amount: 1,
-      }
-    ],
     characterClass: {
       name: 'Fighter',
       icon: fighterIcon,
     }
   }
+
+  const { map, health_potion, food_rations, book_collection, torch, climbing_gear, mana_potion, battle_axe, leather_armor} = inventoryOptions
+  const inventory = [
+    {
+      map, amount: 1,
+    },
+    {
+      health_potion, amount: 5,
+    },
+    {
+      food_rations, amount: 5,
+    },
+    {
+      book_collection, amount: 1,
+    },
+    {
+      torch, amount: 1,
+    },
+    {
+      climbing_gear, amount: 1,
+    },
+    {
+      mana_potion, amount: 1,
+    },
+    {
+      battle_axe, amount: 1,
+    },
+    {
+      leather_armor, amount: 1,
+    },
+  ]
 
   return (
     <div className="App">
@@ -96,7 +90,7 @@ function App() {
       </div>
       <div className='extra-info'>
         <SkillsList skills={character.skills} />
-        <Inventory inventory={character.inventory} strength = {character.attributes.strength}/>
+        <Inventory inventory={inventory} strength = {character.attributes.strength}/>
       </div>
     </div>
   );
