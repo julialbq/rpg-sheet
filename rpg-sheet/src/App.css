@@ -1,0 +1,44 @@
+.App {
+  margin: 0 auto;
+  height: 90vh;
+  width: 100vw;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  background-color: saddlebrown;
+  color: blanchedalmond;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  width: 5%;
+  opacity: .3;
+}
+
+.info {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 48px;
+}
+
+.main-info {
+  width: 40vw;
+}
+
+.extra-info {
+  width: 100vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
