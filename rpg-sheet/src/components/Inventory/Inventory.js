@@ -15,7 +15,7 @@ export const Inventory = ({inventory, strength}) => {
   return (
     <div className="inventory">
       <h3> <GiBowieKnife size={22}/> Inventory</h3>
-      <p className='load'>Load: {load}</p>
+      <p className='load'>Load: {load}/{charactersMaximumLoad}</p>
       {load > charactersMaximumLoad && <p className='load'>Load: Overload</p>}
       <ul>
         {inventory.map((item) => <InventoryItems key={Object.keys(item)[0]} item={item} />)}
